@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background-color: #0A0C4E;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.1rem;
+  color: white;
+  transition: all 0.4s ease-in-out;
+}/*# sourceMappingURL=style.css.map */
