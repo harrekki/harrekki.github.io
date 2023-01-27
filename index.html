@@ -5,16 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="/styles/normalize.css">
     <link rel="stylesheet" href="/styles/style.css">
-    <!-- Google Font Stack -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Barlow+Semi+Condensed:wght@600&family=Barlow:ital@0;1&family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" 
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Barlow+Semi+Condensed:wght@600&family=Barlow:ital@0;1&family=Major+Mono+Display&display=swap">
 </head>
+
 <body>
+    <!-- Page section content -->
+    <header class="section sec-1 home active" id="home"></header>
+    <main>
+        <section class="section sec-2 about" id="about"></section>
+        <section class="section sec-3 portfolio" id="portfolio"></section>
+        <section class="section sec-4 blog" id="blog" hidden></section>
+        <section class="section sec-5 contact" id="contact"></section>
+    </main>
+
+    <!-- Navigation Controls -->
+    <nav class="controls">
+        <div class="control control-1 active-btn" data-id="home">
+            <i class="fa-solid fa-house"></i>
+            <p class="nav-text">home</p> 
+        </div>
+        <div class="control control-2" data-id="about">
+            <i class="fa-solid fa-user"></i>
+            <p class="nav-text">about</p>
+        </div>
+        <div class="control control-3" data-id="portfolio">
+            <i class="fa-solid fa-briefcase"></i>
+            <p class="nav-text">portfolio</p>
+        </div>
+        <!-- <div class="control control-4" data-id="blog" hidden>
+            <i class="fa-solid fa-comment"></i> -->
+            <!-- <p class="nav-text">blog</p> -->
+        </div>
+        <div class="control control-5" data-id="contact">
+            <i class="fa-solid fa-envelope"></i>
+            <p class="nav-text">contact</p>
+        </div>
+    </nav>
+
+    <div class="theme-btn">
+        <i class="fa-solid fa-yin-yang"></i>
+    </div>
+
     
+
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/94903a6b05.js" crossorigin="anonymous"></script>
+    <script src="/app.js"></script>
 </body>
 </html>

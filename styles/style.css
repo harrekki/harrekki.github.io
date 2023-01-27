@@ -5,10 +5,138 @@
   list-style: none;
 }
 
+:root {
+  --white: #fff;
+  --black: #000;
+  --primary: #0A0C4E;
+  --secondary: #6693D8;
+  --highlight-1: #3D56BD;
+  --highlight-2: #A5A4D6;
+  --trans: all .4s ease-in-out;
+}
+
+/* General */
 body {
-  background-color: #0A0C4E;
-  font-family: "Barlow", sans-serif;
+  background-color: var(--primary);
+  font-family: 'Barlow', sans-serif;
   font-size: 1.1rem;
-  color: white;
-  transition: all 0.4s ease-in-out;
-}/*# sourceMappingURL=style.css.map */
+  color: var(--white);
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+/* Sections */
+header {
+  height: 100vh;
+  color: var(--white);
+  overflow: hidden;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 3rem 18rem;
+}
+
+.section {
+  transform: translateY(-100%) scale(0);
+  transition: var(--trans);
+  background-color: var(--primary);
+}
+
+.sec-1 {
+  background-color: red;
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.sec-2 {
+  background-color: blue;
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.sec-3 {
+  background-color: green;
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.sec-4 {
+  background-color: yellow;
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.sec-5 {
+  background-color: violet;
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+/* Nav Controls */
+.controls {
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  left: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  padding: 5vh 5px;
+  border-right: 2px solid var(--highlight-2);
+}
+
+.active-btn, .control {
+  transition: var(--trans);
+}
+
+.active-btn {
+  color: #eeedf7 !important;
+  /* box-shadow: 20px 20px 50px #cbcae7 !important; */
+}
+
+.control:hover, .active-btn:hover {
+  background-color: var(--highlight-1);
+}
+
+.control {
+  padding: .5rem;
+  width: 90%;
+  height: 3.1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+  color: var(--highlight-2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: .7rem 0;
+  box-shadow: 0 3px 15px rgba(0,0,0,.2);
+}
+
+.nav-text {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: .8rem;
+  margin-top: 1px;
+}
+
+i {
+  font-size: 1.5rem;
+}
+
+
+
+
+
