@@ -52,7 +52,7 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 3rem 18rem;
+  padding: 1rem 2rem 3rem 5.5rem;
 }
 
 .section {
@@ -68,7 +68,6 @@ section {
 
 .sec-2 {
   opacity: 1;
-  background-color: blue;
   display: none;
 }
 
@@ -136,7 +135,9 @@ section {
 }
 
 small {
-  color: var(--highlight-2)
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: var(--highlight-2);
+  text-transform: uppercase;
 }
 
 .name {
@@ -146,12 +147,23 @@ small {
 #name {
   color: var(--secondary);
   font-family: 'Cabin Sketch', cursive;
+  font-size: 3.5rem;
 }
 
 .header-text p {
   margin: 1.5rem 0;
   line-height: 1.5rem;
 }
+
+/* About Section */
+
+.about-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+
 
 
 
@@ -213,7 +225,6 @@ i {
   display: flex;
   align-self: flex-start;
 }
-
 .main-btn {
   /* background-color: #3D56BD; */
   border-radius: var(--br-sm);
@@ -227,17 +238,24 @@ i {
   overflow: hidden;
   transition: var(--trans);
 }
-
 .main-btn:hover {
   background-color: var(--highlight-1);
   color: var(--text-color);
 }
-
 .btn-text {
   padding: 0 1rem;
 }
 .btn-icon {
   padding-right: 10px;
+}
+
+.main-title {
+  text-align: center;
+}
+.main-title h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 2.5rem;
 }
 
 
