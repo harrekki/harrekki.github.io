@@ -21,7 +21,7 @@
   --grey5: #2a2e35;
   --grey6: #12181b;
   --trans: all .4s ease-in-out;
-  --br-sm: 14px;
+  --br-sm: 5px;
 }
 
 /* ------------------------ General ----------------------------- */
@@ -214,7 +214,7 @@ small {
   width: 100%;
 }
 
-/* About Skills */
+/* Skill Bars */
 .about-skills {
   display: grid;
   grid-template-columns: 10% 90%;
@@ -228,11 +228,22 @@ small {
 }
 
 .skills-title h3 {
+  color: var(--secondary);
+  position: relative;
   text-align: center;
   font-size: 1.8rem;
   text-transform: uppercase;
   writing-mode: vertical-lr;
   transform: rotate(0.5turn);
+}
+.skills-title h3::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: -15px;
+  width: 3px;
+  height: 2rem;
+  background-color: var(--secondary);
 }
 
 .progress-bars {
@@ -291,6 +302,53 @@ small {
   width: 70%;
 }
 
+/* Certificate Boxes */
+.about-certs {
+  padding: 2rem 0 3rem;
+  text-align: center;
+}
+.certs-title {
+  color: var(--secondary);
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  padding-bottom: 2rem;
+}
+
+.cert-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6rem;
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-left: 3.5rem !important;
+}
+.cert-item {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  border: 1px solid var(--grey5);
+  border-radius: var(--br-sm);
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  transition: var(--trans);
+  box-shadow: 1px 2px 15px rgba(0,0,0,0.2);
+}
+.cert-item:hover {
+  cursor: default;
+  transform: translateY(-5px);
+  border: 1px solid var(--secondary);
+  box-shadow: 1px 2px 15px rgba(0,0,0,0.42);
+}
+.cert-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: var(--grey3);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.2rem;
+}
 
 
 /* ------------------------- Nav Controls ----------------------- */
@@ -387,6 +445,13 @@ i {
   color: var(--secondary);
   font-family: 'Cabin Sketch', cursive;
   font-size: 2.8rem;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(165,164,214,0),rgba(165,164,214,0.75),rgba(165,164,214,0));
+  width: 100%;
 }
 
 
