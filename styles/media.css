@@ -6,7 +6,6 @@
     }
 }
 
-
 @media screen and (min-width: 630px) and (max-width: 1035px) {
     .section {
         padding: 1rem 2rem 1rem 6rem;
@@ -47,9 +46,13 @@
         padding: 5px;
     }
 
-    
 }
 
 @media screen and (max-width: 630px) {
-    
+    .controls {
+        flex-direction: row !important;
+        padding: 0;
+        /* transform: translateY(-10); */
+
+    }
 }
