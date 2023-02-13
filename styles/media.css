@@ -1,0 +1,55 @@
+@media screen and (min-width: 1035px) {
+    .home {
+        background-image: url(/img/background.jpg);
+        background-size: 95% auto;
+        background-position: center right -32%;
+    }
+}
+
+
+@media screen and (min-width: 630px) and (max-width: 1035px) {
+    .section {
+        padding: 1rem 2rem 1rem 6rem;
+    }
+
+    .home {
+        background-image: url(/img/background.jpg);
+        background-size: cover;
+    }
+
+    .about {
+        padding: 1rem 2rem 1rem 6rem;
+        font-size: 1rem;
+    }
+
+    .about-left .image {
+        margin-left: 0 !important;
+    }
+
+    .skills-title h3::before {
+        top: 0px !important;
+    }
+    .progress-bars {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 2rem !important;
+        width: 85%;
+    }
+
+    .hover-items {
+        font-size: 0.9rem;
+    }
+    .hover-items h3 {
+        font-size: 1.2rem !important;
+    }
+
+    .hover-icons i {
+        font-size: 1.1rem;
+        padding: 5px;
+    }
+
+    
+}
+
+@media screen and (max-width: 630px) {
+    
+}

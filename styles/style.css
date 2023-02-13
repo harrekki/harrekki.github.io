@@ -1,3 +1,6 @@
+@import "media.css" screen and (min-width: 1035px), 
+  (min-width: 630px) and (max-width: 1035px), (max-width: 630px);
+
 * {
   margin: 0;
   padding: 0;
@@ -52,6 +55,7 @@ h4, h5, h6 {
   font-family: 'Barlow Condensed', sans-serif;
 }
 
+
 /* ------------------------- Sections --------------------------- */
 header {
   height: 100vh;
@@ -65,7 +69,7 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 2rem 8rem 4rem;
+  padding: 1.5rem 6rem 2rem 8rem;
 }
 
 .section {
@@ -118,10 +122,8 @@ section {
 
 /* Home section ------------------------------------------------- */
 .home {
-  background-image: url(/img/background.jpg);
-  background-size: 95% auto;
-  /* background-repeat: no-repeat; */
-  background-position: center right -32%;
+  
+  padding-left: 8rem;
 }
 
 .header-content {
@@ -134,7 +136,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 8rem;
 }
 
 .header-text {
@@ -171,7 +172,6 @@ small {
 .about-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 100%;
   padding-top: 2rem;
   padding-bottom: 5rem;
 }
@@ -200,7 +200,6 @@ small {
   background-color: var(--black);
   border-radius: var(--br-sm);
   border: 4px solid var(--grey3);
-  min-width: 100px;
   margin-left: 7rem;
   height: 400px;
   z-index: 300;
@@ -345,23 +344,27 @@ small {
 }
 
 .cert-items {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 6rem;
+  gap: 5rem; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
   width: 100%;
   padding-top: 1.5rem;
-  padding-left: 3.5rem !important;
 }
 .cert-item {
   display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 80%;
+  width: 200px;
+  height: 300px;
   border: 1px solid var(--grey5);
   border-radius: 5px;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding: 1rem 1rem 2rem;
   transition: var(--trans);
   box-shadow: 1px 2px 15px rgba(0,0,0,0.2);
 }
@@ -448,7 +451,7 @@ small {
 }
 
 .hover-icons {
-  width: 50%;
+  width: 70%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -478,8 +481,7 @@ small {
 .contact-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  padding-top: 1rem;
+  gap: .5rem;
 }
 .contact-right {
   display: flex;
@@ -692,4 +694,11 @@ hr {
   width: 100%;
 }
 
-
+/* ------------------------- Media Queries ---------------------- */
+/* @media screen and (min-width: 1035px) {
+  .home {
+      background-image: url(/img/background.jpg);
+      background-size: 95% auto;
+      background-position: center right -32%;
+  }
+} */
