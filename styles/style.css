@@ -70,7 +70,7 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 1.5rem 6rem 2rem 8rem;
+  padding: 1.5rem 6rem 2rem;
 }
 
 .section {
@@ -173,35 +173,23 @@ small {
 .about-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding-top: 2rem;
-  padding-bottom: 5rem;
+  gap: 1rem;
+  padding: 2rem 0 5rem;
 }
 
 .about-left {
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
   z-index: 100;
-}
-
-.about-left .shape {
-  background-color: var(--highlight-2);
-  border-radius: 5px;
-  width: 65%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 200;
-  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
 .about-left .image {
   background-color: var(--black);
   border-radius: var(--br-sm);
   border: 4px solid var(--grey3);
-  margin-left: 7rem;
+  position: relative;
   height: 400px;
   z-index: 300;
 }
