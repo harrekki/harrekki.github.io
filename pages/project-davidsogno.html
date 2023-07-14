@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/project.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" 
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Barlow+Semi+Condensed:wght@600&family=Barlow:ital@0;1&family=Cabin+Sketch:wght@700&display=swap">
+</head>
+<body>
+    <header>
+        <h1 class="title">David Sogno</h1>
+        <p class="subtitle">An eCommerce Website </p>
+    </header>
+    <main>
+        <section class="hero heading">
+
+            <img class="hero--img" src="https://placehold.co/800x400" alt="screenshot of the project's main page" />
+
+            <div class="hero--con">
+                <p class="hero--text">
+                    David Sogno is a fullstack web application that was the capstone project for the 
+                    Java Fullstack Developer bootcamp program at GenerationUSA.  Built from scratch, this project
+                    allowed me to review the curriculum I was teaching to students in the program (and revise our
+                    instructions as needed) and put into practice core concepts such as OOP, MVC architecture,
+                    and REST.   
+                </p>
+    
+                <div class="project--links">
+                    <h3 class="link-subtitle">Links</h3>
+                    <!-- <a class="icon-links" href="#">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        Live Site
+                    </a> -->
+                    <a class="icon-links" href="https://github.com/harrekki/artist-website" target="_blank">
+                        <i class="fa-brands fa-github-alt"></i>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+            
+        </section>
+        
+        <section class="grid">
+
+            <img src="https://placehold.co/400x400" alt="">
+            
+            
+            <div class="grid--block">
+                <h2 class="block-title">Project Purpose and Goals</h2>
+                <p class="block-text">
+                    There were 4 sprints for this project.  Sprint 1 focused on the frontend with UI/UX design and 
+                    wireframing, scaffolding, and CSS styles.  In Sprint 2, JavaScript was added to create the functionality
+                    of the application, simulating the backend via Fetch calls to JSON files and localStorage.  Sprint 3 moved
+                    to the backend with building a REST API with Spring Boot and a MySQL database.  Finally, Sprint 4 integrated
+                    the front and backend to produce an MVP. 
+                </p>
+            </div>
+            
+            
+            <div class="grid--block">
+                <h2 class="block-title">Web Stack</h2>
+                <p class="block-text">
+                    Since time is at a premium during a bootcamp, a heavily-styled page with mostly custom CSS
+                    was less practical.  Bootstrap provides fully-styled components with easy-to-use documentation,
+                    allowing fast development of the presentation layer.  Frontend frameworks were not taught in the 
+                    program, so I turned to JQuery to improve readability of the JavaSript and gain a little knowledge 
+                    of one of the most common JS libraries out there.
+                </p>
+                <p class="block-text">
+                    Java remains one of the most popular (and stable) languages for the backend, and with Spring Boot it
+                    was fairly painless to initialize and build the API.  MySQL was also a logical choice for the persistance
+                    layer, being compatible with most deployment platforms and providing GUI tools such as the MySQL Workbench 
+                    to make managing the database easier.
+                </p>
+            </div>
+            
+            <div class="stack--block">
+                <div class="stack-icon">
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <span>Bootstrap5</span>
+                </div>
+                <div class="stack-icon">
+                    <i class="fa-brands fa-java"></i>
+                    <span>Java</span>
+                </div>
+                <div class="stack-icon">
+                    <i class="fa-solid fa-leaf"></i>
+                    <span>Spring Boot</span>
+                </div>
+                <div class="stack-icon">
+                    <i class="fa-solid fa-database"></i>
+                    <span>MySQL</span>
+                </div>
+            </div>
+            
+            <img src="https://placehold.co/400x400" alt="">
+            
+            <div class="grid--block">
+                <h2 class="block-title">Issues</h2>
+                <p class="block-text">
+                    The biggest challenge in building this project was the deployment piece.  In the past, Heroku had
+                    a free tier that allowed for easy deployment (or so I've been told), but they discontinued that 
+                    option.  Our best solution was to deploy a docker container to an AWS EC2 instance for the API and use RDS for the database. 
+                    However, all my attempts to get a working application communicating with the database inside a 
+                    container failed, so I plan to circle back to this once I have a better understanding 
+                    of Docker.
+                </p>
+            </div>
+        </section>
+
+        <section class="hero closing">
+            
+            <h2 class="block-title">Lessons Learned</h2>
+            
+            <p class="block-text">
+                This was a great project for understanding the entire ecosystem of a fullstack application, but my 
+                main takeaway was that I enjoy frontend development much more than backend, despite all the training
+                I had with Java prior to this program.  I personally found it hard to "dabble" with Docker in my attempt
+                to deploy this app, and definitely want to dive deeper into that technology. That might be a bit of contradiction with
+                my first statement, but I just enjoy learning how things work!  
+            </p>
+            
+            <img class="hero--img" src="https://placehold.co/800x400" alt="">
+        </section>
+
+
+    </main>
+    <footer>
+       <p>&copy; 2023 by David LaRocco</p>
+       <ul class="footer--links">
+            <li><a href="../index.html">Website</a></li>
+            <li><a href="https://www.linkedin.com/in/davidblarocco/">LinkedIn</a></li>
+            <li><a href="https://github.com/harrekki">GitHub</a></li>
+       </ul>
+    </footer>
+    <script src="https://kit.fontawesome.com/94903a6b05.js" crossorigin="anonymous"></script>
+</body>
+</html>
