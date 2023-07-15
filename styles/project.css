@@ -98,7 +98,7 @@
     color: var(--secondary);
     text-transform: uppercase;
     font-size: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3.5rem;
   }
   
   .block-text {
@@ -182,7 +182,12 @@
     display: grid;
     grid: repeat(3, 1fr) / repeat(2, 1fr);
     gap: 4em 2em;
-    margin-bottom: 8em;
+    margin-bottom: 6.5em;
+  }
+
+  .block--img {
+    display: flex;
+    padding: 0.5rem;
   }
 
   .grid--block, .stack--block {
@@ -226,6 +231,13 @@
 
   .closing .block-text {
     margin-bottom: 3em;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    margin-top: 2em;
   }
 
   .footer--links {

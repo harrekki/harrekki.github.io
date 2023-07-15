@@ -180,6 +180,14 @@ small {
 }
 
 .about-left {
+  background-image: 
+    radial-gradient(
+      circle at center, 
+      transparent 55%, 
+      var(--primary) 85%
+      ), 
+    url("../img/stars.png");
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
