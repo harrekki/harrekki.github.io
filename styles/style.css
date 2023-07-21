@@ -440,17 +440,21 @@ small {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: .5rem;
+  margin-top: 1rem;
 }
 .contact-right {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .form-container {
   width: 95%;
   height: 100%;
-  border: 1px solid var(--highlight-1);
-  border-radius: 5px;
+  border-left: 1px solid var(--highlight-1);
+  padding-left: 0.5rem;
+  margin-top: 3rem;
+  /* border-radius: 5px; */
   height: 30rem;
 }
 .form-icon {
@@ -465,7 +469,7 @@ form {
   grid-template-rows: repeat(2, 1fr);
   gap: 1rem;
   padding-top: .8rem;
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
 }
 fieldset {
   border: 0;
@@ -493,8 +497,7 @@ input, textarea {
 }
 .submit-btn {
   display: flex;
-  padding: .5rem .3rem 0;
-
+  padding: .5rem .3rem 0; 
 }
 .submit-btn input {
   background-color: inherit;
