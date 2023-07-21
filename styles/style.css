@@ -567,7 +567,8 @@ input, textarea {
 }
 
 .active-btn, .control {
-  transition: var(--trans);
+  will-change: filter;
+  transition: filter 300ms;
 }
 
 .active-btn {
@@ -575,7 +576,7 @@ input, textarea {
 }
 
 .control:hover, .active-btn:hover {
-  background-color: var(--highlight-1-trans);
+  filter: drop-shadow(0 0 0.75em var(--grey2));
 }
 
 .control {
