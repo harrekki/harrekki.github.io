@@ -43,6 +43,9 @@
     display: block;
   }
   
+  hr {
+    display: none;
+  }
   
   /*--------------------- typography ---------------------------*/
   a {
@@ -73,7 +76,7 @@
     color: var(--secondary);
     font-family: 'Cabin Sketch', cursive;
     font-size: 2.5rem;
-    margin-top: -1rem;
+    margin-top: 1rem;
   }
 
   .subtitle {
@@ -82,12 +85,15 @@
   }
 
 
+
 /* ------------------------ layout -------------------------*/
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 1rem;
+    justify-content: start;
+    gap: 4rem;
+    padding: 0 1rem 1rem;
+    margin-top: 1rem;
     min-height: 100vh;
 }
 
@@ -105,7 +111,64 @@
     overflow: hidden;
     transition: var(--trans);
 }
-.button:hover {
-    color: var(--highlight-2);
+
+/* ------------------- Media Queries ---------------------------*/
+@media screen and (min-width: 900px) {
+    .container {
+        min-height: auto;
+        display: grid;
+        grid-template-areas:
+            "image subtitle"
+            "image message"
+            "image button";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 30% 40% 30%;
+        gap: 1rem 0;
+        padding: 0 2rem 3rem;
+        margin-top: 3rem;
+    }
+
+    .name {
+        font-size: 3.5rem;
+        padding: 1rem 0;
+    }
+
+    hr {
+        display: block;
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(165,164,214,0),rgba(165,164,214,0.75),rgba(165,164,214,0));
+        width: 90%;
+        margin: 0 auto;
+      }
+
+    .image {
+        grid-area: image;
+        width: 100%;
+    }
+    .subtitle {
+        grid-area: subtitle;
+        margin-top: 1.5rem;
+    }
+    .message {
+        grid-area: message;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .button {
+        grid-area: button;
+        width: 50%;
+        height: 50%;
+        margin: 0 auto;
+        background: inherit;
+        color: var(--highlight-2);
+    }
+
+    .button:hover {
+        background-color: var(--highlight-1);
+        color: var(--text-color);
+    }
+
+    
 }
 
