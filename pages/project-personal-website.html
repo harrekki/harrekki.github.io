@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/project.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" 
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Barlow+Semi+Condensed:wght@600&family=Barlow:ital@0;1&family=Cabin+Sketch:wght@700&display=swap">
+</head>
+<body>
+    <header>
+        <h1 class="title">Personal Website</h1>
+        <p class="subtitle">A project in vanilla web technologies</p>
+    </header>
+    <main>
+        <section class="hero heading">
+
+            <img class="hero--img" src="../img/project-img/personal/personal-1.png" alt="screenshot of the project's wireframes" />
+
+            <div class="hero--con">
+                <p class="hero--text">
+                     The usual advise given to my students is that you don't include your portfolio site in your actual portfolio; however, this was one of my first web projects, it was built from the ground up (mostly, more on that in a bit), and has enough moving parts to warrent reflection. It is something I actively maintain and improve upon as I learn more.
+                </p>
+    
+                <div class="project--links">
+                    <h3 class="link-subtitle">Links</h3>
+                    <a class="icon-links" href="https://davidlarocco.dev/" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        Live Site
+                    </a>
+                    <a class="icon-links" href="https://github.com/harrekki/harrekki.github.io" target="_blank">
+                        <i class="fa-brands fa-github-alt"></i>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+            
+        </section>
+        
+        <section class="grid">
+
+            <div class="block--img">
+                <img src="../img/project-img/personal/personal-2.png" alt="">
+            </div>
+            
+            <div class="grid--block">
+                <h2 class="block-title">Project Purpose and Goals</h2>
+                <p class="block-text">
+                    Putting together a portfolio website is one of the milestones for new developers. While using a platform with WYSIWYG editors is perfectly acceptable to get yourself "out there," I'm more the all-in type. I wanted something that reflected my personality and aesthetics, and get the benefit of building something from scratch. It also has room to grow, and and certainly room for improvement.
+                </p>
+                <p class="block-text">
+                    Originally, this was based on a <a href="https://youtu.be/xV7S8BhIeBo" target="_blank">YouTube tutorial</a> put out by freeCodeCamp, of which I followed along.  I then created a new design based on the core structure, modified most of the layout and asset choices, and rebuilt it. This required to refactor much of the logic and styling.
+                </p>
+            </div>
+            
+            
+            <div class="grid--block">
+                <h2 class="block-title">Web Stack</h2>
+                <p class="block-text">
+                    This was a real bread-and-butter project, as I was still learning the basics.  The original tutorial used Sass, which I didn't know at the time and decided not to use, but one of my goals is to refactor the CSS with either Sass or PostCSS, as it's gotten hard to maintain in its current state.
+                </p>
+                <p class="block-text">
+                    Only a small amount of JavaScript was needed to add event handlers for navigating to each section of the site.  Transitions were smoothed out with CSS animations. I used Font Awesome and Google Fonts for great-looking assets and to give the site that extra refinement. 
+                </p>
+                <p class="block-text">
+                    For the contact form, <a href="https://formsubmit.co/" target="_blank">FormSubmit</a> provided an easy way to implement seamless email submissions with features like honeypots and blacklists for security, and auto-responses and custom success pages for user experience.
+                </p>
+            </div>
+            
+            <div class="stack--block">
+                <div class="stack-icon">
+                    <i class="fa-brands fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="stack-icon">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <span>CSS</span>
+                </div>
+                <div class="stack-icon">
+                    <i class="fa-brands fa-square-js"></i>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+            
+            <div class="block--img">
+                <img src="../img/project-img/personal/personal-4.png" alt="">
+            </div>
+            
+            <div class="grid--block">
+                <h2 class="block-title">Issues</h2>
+                <p class="block-text">
+                    Aside from not knowing what I was doing when I started? 🤣 Seriously, the website's biggest issue is the CSS: the main style page is 834 lines and, while I've organized and commented it into sections that make sense, it needs cleaning up. Modularizing the files, and being able to nest properties with Sass or PostCSS is my next goal.  
+                </p>
+                <p class="block-text">
+                    When I decided to include these project summaries for my portfolio, I had consider how to incorporate them into the structure of the site, as it's built on a 1-page model.  That has made keeping the overall design more difficult, with additional CSS files, as well as considering if the user pathways still make sense.
+                </p>
+            </div>
+        </section>
+
+        <section class="hero closing">
+            
+            <h2 class="block-title">Lessons Learned</h2>
+
+            <div class="block-text">
+                <p>
+                    This project reminds me that you can accomplish almost everything with CSS and a little JavaScript, and there was benefit to going the long way around to understand how something like hiding and displaying different elements works under the hood.  It has given me a great appreciation of frameworks and libraries to make our lives easier.
+                </p>
+                <p>
+                     One of my biggest regrets was not starting this project with a "mobile-first" approach, which led to more complex media queries (I now have a sign above my desk to remind me!).  Considering possible issues and planning ahead really is the key to success on large projects, but sometimes you end up in different directions that you couldn't have planned for, so you need to be open to new ways of thinking.  
+                </p>
+            </div>
+            
+            <img class="hero--img" src="../img/project-img/personal/personal-3.png" alt="">
+        </section>
+
+        <section class="gallery">
+            <div class="block--img">
+                <img src="../img/project-img/personal/personal-5.png" alt="">
+            </div>
+            <div class="block--img">
+                <img src="../img/project-img/personal/personal-6.png" style="border: 2px solid rgba(61, 86, 189,0.60);" alt="">
+            </div>
+        </section>
+
+    </main>
+    <footer>
+       <p>&copy; 2023 by David LaRocco</p>
+       <ul class="footer--links">
+            <li><a class="footer-link" href="../index.html">Website</a></li>
+            <li><a class="footer-link" href="https://www.linkedin.com/in/davidblarocco/">LinkedIn</a></li>
+            <li><a class="footer-link" href="https://github.com/harrekki">GitHub</a></li>
+       </ul>
+    </footer>
+    <script src="https://kit.fontawesome.com/94903a6b05.js" crossorigin="anonymous"></script>
+</body>
+</html>
