@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Page</title>
+    <title>Oblique Strategies Project</title>
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/project.css">
     <!-- Google Fonts -->
@@ -15,31 +15,26 @@
 </head>
 <body>
     <header>
-        <h1 class="title">Project Title</h1>
-        <p class="subtitle">Project subtitle</p>
+        <h1 class="title">Oblique Strategies</h1>
+        <p class="subtitle">A React application to help remove creative blocks</p>
     </header>
     <main>
         <section class="hero heading">
 
-            <img class="hero--img" src="https://placehold.co/800x400" alt="screenshot of the project's main page" />
+            <img class="hero--img" src="../img/project-img/oblique/oblique-1.png" alt="screenshot of the project's main page" />
 
             <div class="hero--con">
                 <p class="hero--text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Accusamus aperiam sed hic sequi debitis praesentium error 
-                    voluptate fugiat ex in.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Accusamus aperiam sed hic sequi debitis praesentium error 
-                    voluptate fugiat ex in.
+                    This application is based on a deck of cards created by the musician Brian Eno and artist Peter Schmidt. An individual card can be drawn randomly from the deck, providing a suggestion, phrase, or word that offers an alternative way to think about a problem. Other features include saving multiple cards in a layout to combine multiple strategies, and being able to save favorite strategies (persistant in localStorage) to review later when needed.
                 </p>
     
                 <div class="project--links">
                     <h3 class="link-subtitle">Links</h3>
-                    <a class="icon-links" href="#" target="_blank">
+                    <a class="icon-links" href="https://harrekki-oblique-strategies.netlify.app/" target="_blank">
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         Live Site
                     </a>
-                    <a class="icon-links" href="#" target="_blank">
+                    <a class="icon-links" href="https://github.com/harrekki/oblique-strategies" target="_blank">
                         <i class="fa-brands fa-github-alt"></i>
                         GitHub
                     </a>
@@ -51,15 +46,16 @@
         <section class="grid">
 
             <div class="block--img">
-                <img src="https://placehold.co/400x400" alt="">
+                <img src="../img/project-img/oblique/oblique-2.png" alt="">
             </div>
             
             <div class="grid--block">
                 <h2 class="block-title">Project Purpose and Goals</h2>
+                <p >
+                    A common question from students learning web development for the first time is: "What should I learn next after this course?"  Usually, my answer is to learn React - and I clearly need to practice what I preach!  After getting the basics down with Scrimba's excellent <a href="https://scrimba.com/learn/learnreact" target="_blank">Learn React</a> course, I wanted to build something from scratch to solidify what I learned.  
+                </p>
                 <p class="block-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed veniam voluptatem non, impedit culpa ipsum esse unde id excepturi qui.
-                    Atque, dicta labore at sapiente recusandae consectetur eveniet unde veritatis! Non fuga ipsum unde repellendus vitae earum aperiam eaque error?
-                    Molestias libero pariatur doloremque natus iusto molestiae illo repellat ad. Laborum saepe eligendi at amet reiciendis dolores? Nulla, ut eveniet.
+                    I've used the Oblique Strategies deck with creative projects in the past, and creating an app version seemed fun and practical (they really are great at giving your brain a reboot). I wanted to create a simple design inspired by the deck, while adding some interesting features that would challenge me, like working with localStorage and adjustable frames.  But mostly, I wanted to work with React without a safety net, and this project had just the right amount of difficulty and fun.
                 </p>
             </div>
             
@@ -67,45 +63,43 @@
             <div class="grid--block">
                 <h2 class="block-title">Web Stack</h2>
                 <p class="block-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed veniam voluptatem non, impedit culpa ipsum esse unde id excepturi qui.
-                    Atque, dicta labore at sapiente recusandae consectetur eveniet unde veritatis! Non fuga ipsum unde repellendus vitae earum aperiam eaque error?
-                    Molestias libero pariatur doloremque natus iusto molestiae illo repellat ad. Laborum saepe eligendi at amet reiciendis dolores? Nulla, ut eveniet.
+                    Since my main goal was to gain more hands-on experience with React, it was the natural choice.  I also made sense since the cards, layouts, buttons, and frames would be better as reusable components, and managing state for what card and components were displayed would be easier as well.
+                </p>
+                <p class="block-text">
+                    I really wanted to work with Tailwind on this project, and with my experience with Bootstrap it was easy to just jump in.  I didn't want to have to manage CSS files and class names, and Tailwind made styling less stressful while adding the benefits of a design system.
+                </p>
+                <p class="block-text">
+                    Vite allowed for fast and easy scaffolding, with straght-forward configuration of Tailwind and PostCSS.  Deploying the app with Netlify was intuitive relatively frictionless - I had trouble deploying from GitHub with the CLI, but no problems doing so from the GUI.
                 </p>
             </div>
             
             <div class="stack--block">
                 <div class="stack-icon">
-                    <i class="fa-solid fa-code"></i>
-                    <span>Technology</span>
+                    <i class="fa-brands fa-react"></i>
+                    <span>React</span>
                 </div>
                 <div class="stack-icon">
-                    <i class="fa-solid fa-code"></i>
-                    <span>Technology</span>
+                    <i class="fa-solid fa-wind"></i>
+                    <span>Tailwind CSS</span>
                 </div>
                 <div class="stack-icon">
-                    <i class="fa-solid fa-code"></i>
-                    <span>Technology</span>
+                    <i class="fa-solid fa-bolt-lightning"></i>
+                    <span>Vite</span>
                 </div>
                 <div class="stack-icon">
-                    <i class="fa-solid fa-code"></i>
-                    <span>Technology</span>
-                </div>
-                <div class="stack-icon">
-                    <i class="fa-solid fa-code"></i>
-                    <span>Technology</span>
+                    <i class="fa-solid fa-diamond"></i>
+                    <span>Netlify</span>
                 </div>
             </div>
             
             <div class="block--img">
-                <img src="https://placehold.co/400x400" alt="">
+                <img src="../img/project-img/oblique/oblique-5.png" alt="">
             </div>
             
             <div class="grid--block">
                 <h2 class="block-title">Issues</h2>
                 <p class="block-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed veniam voluptatem non, impedit culpa ipsum esse unde id excepturi qui.
-                    Atque, dicta labore at sapiente recusandae consectetur eveniet unde veritatis! Non fuga ipsum unde repellendus vitae earum aperiam eaque error?
-                    Molestias libero pariatur doloremque natus iusto molestiae illo repellat ad. Laborum saepe eligendi at amet reiciendis dolores? Nulla, ut eveniet.
+                    
                 </p>
             </div>
         </section>
@@ -122,15 +116,15 @@
                 Ipsum ad provident iusto, odio voluptas eos dicta ipsa labore dignissimos, quos itaque, maiores recusandae id exercitationem debitis rerum impedit!
             </p>
             
-            <img class="hero--img" src="https://placehold.co/800x400" alt="">
+            <img class="hero--img" src="../img/project-img/oblique/oblique-4.png" alt="">
         </section>
 
         <section class="gallery">
-            <div class="block--img">
-                <img src="https://placehold.co/400" alt="">
+            <div>
+                <img src="../img/project-img/oblique/oblique-3.png" alt="">
             </div>
-            <div class="block--img">
-                <img src="https://placehold.co/400" alt="">
+            <div>
+                <img src="../img/project-img/oblique/oblique-6.png" alt="">
             </div>
         </section>
 

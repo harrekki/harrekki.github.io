@@ -48,8 +48,14 @@
   a {
     display: inline-block;
     text-decoration: none;
-    color: inherit;
+    color: var(--highlight-2);
     font-family: inherit;
+    transition: var(--trans);
+  }
+
+  a:hover {
+    color: var(--highlight-1);
+    font-weight: bold;
   }
 
   h1, h2, h3 {
@@ -148,6 +154,9 @@
     object-fit: cover;
   }
 
+  .block--img img {
+   object-fit: contain;
+  }
 
   /* layout */
   header{
@@ -324,10 +333,6 @@
 
 }
 
-@media screen and (min-width: 630px) and (max-width: 1035px) {}
 
-@media screen and (min-width: 1035px) {}
-
-  
 
 
