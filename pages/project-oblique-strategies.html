@@ -99,7 +99,10 @@
             <div class="grid--block">
                 <h2 class="block-title">Issues</h2>
                 <p class="block-text">
-                    
+                    I wanted the favorites and spread features to be on a sidebar, either as an off-canvas element or a resizable frame that could be pushed completely out of the viewport when needed.  I decided on the frames approach, but it quickly added complexity to the project and was unwieldy. I settled on a minimum width, as styling it to disapear and still be able to get it back was a challenge. It also doesn't work well with mobile, and a truly responsive style would require a different structural approach to the code. I can see why this is not a feature you see often in modern web design.
+                </p>
+                <p class="block-text">
+                    The increased complexity also required more prop drilling than I would have liked, but the project was not big enough to justify using context. I would take a different approach, knowing what I know now, to make the flow of data easier to follow.
                 </p>
             </div>
         </section>
@@ -107,14 +110,18 @@
         <section class="hero closing">
             
             <h2 class="block-title">Lessons Learned</h2>
-            
-            <p class="block-text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos omnis atque libero nemo laboriosam. Autem et sit perferendis asperiores vel?
-                Nisi corrupti facere eveniet aspernatur, veniam ex itaque! Esse consequuntur molestiae veritatis aut dolorum eum sapiente eius debitis a officiis.
-                Consequatur magnam et nesciunt id dignissimos hic animi amet voluptatibus, debitis fugit officiis aliquam non illo. Temporibus officiis sequi architecto.
-                Earum necessitatibus impedit a quae blanditiis quisquam eveniet officiis id, ut quibusdam repellat eos culpa commodi, ullam temporibus corporis ex.
-                Ipsum ad provident iusto, odio voluptas eos dicta ipsa labore dignissimos, quos itaque, maiores recusandae id exercitationem debitis rerum impedit!
-            </p>
+            <div class="block-text">
+                <p>
+                    This project was my first React application without some kind of tutorial, and I learned how important design and planning are to success.  Some of the questions I had to ask, like "should this be a separate component?" or "where should this state live?" made me think critically about my logic, and also appreciate how well React's features work together. 
+                </p>
+                <p>
+                    Experimenting with resizable frames, a feature I don't think I implemented very succesfully, made me look at design choices differently, and if with more time I would have done more testing before implementing in the final version.  
+                </p>
+                <p>
+                    Some refinements for future versions include changing the resizable frames to an off-canvas element (this would be a major refactor actually) and adding a dark mode.
+                </p>
+
+            </div>
             
             <img class="hero--img" src="../img/project-img/oblique/oblique-4.png" alt="">
         </section>
