@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David LaRocco</title>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/styles/normalize.css">
-    <link rel="stylesheet" href="/styles/style.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" 
-        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Barlow+Semi+Condensed:wght@600&family=Barlow:ital@0;1&family=Cabin+Sketch:wght@700&display=swap">
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Barlow+Semi+Condensed:wght@600&family=Barlow:ital@0;1&family=Cabin+Sketch:wght@700&display=swap">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="src/styles/normalize.css">
+    <link rel="stylesheet" href="src/styles/style.css">
 </head>
 
 <body>
@@ -35,7 +35,7 @@
             <div class="about-container">
                 <div class="about-left">
                     <div class="image">
-                        <img src="/img/profile-300px.png" alt="">
+                        <img src="src/img/profile-300px.png" alt="">
                     </div>
                 </div>
                 <div class="about-right">
@@ -48,7 +48,7 @@
                            students how to code and figure out their way through this big space 
                            we call tech!</p><br>
                         <p>As a Full Stack Web Developer, I design and implement web sites that 
-                           express a client’s vision as well as deliver an intuitive experience 
+                           express a client's vision as well as deliver an intuitive experience 
                            for their visitors.</p><br>
                         <p>Previously, I worked in both retail and hospitality in roles that required
                            documentation and improvement of broken systems, teambuilding and servant 
@@ -57,7 +57,7 @@
                            How can I help?</p>
                     </div>
                     <div class="btn-con">
-                        <a href="/docs/resume.pdf" class="main-btn" target="_blank">
+                        <a href="src/docs/resume.pdf" class="main-btn" target="_blank">
                             <span class="btn-text">Resume</span>
                             <span class="btn-icon">
                                 <i class="fa-solid fa-download"></i>
@@ -91,19 +91,19 @@
                     <div class="cert-items">
                         <div class="cert-item">
                             <a href="https://www.credly.com/badges/e5f1d1b6-0638-4e9e-a6b6-89587e05a998/public_url" target="_blank">
-                                <img src="/img/Aplus Logo Certified CE White.png" height="120" width="130" alt="CompTIA A+ ce certification badge" class="cert-icon" /> 
+                                <img src="src/img/Aplus Logo Certified CE White.png" height="120" width="130" alt="CompTIA A+ ce certification badge" class="cert-icon" /> 
                             </a>
                             <p class="cert-title">CompTIA A+</p>
                         </div>
                         <div class="cert-item">  
                             <a href="https://www.credly.com/badges/f5af7d1d-fa09-4e5c-967c-07fc0dbf7d14/public_url" target="_blank">
-                                <img src="/img/aws-certified-cloud-practitioner.png" alt="AWS Cloud Practioner certification badge" class="cert-icon" />
+                                <img src="src/img/aws-certified-cloud-practitioner.png" alt="AWS Cloud Practioner certification badge" class="cert-icon" />
                             </a> 
                             <p class="cert-title">AWS Cloud Practioner</p>
                         </div>
                         <div class="cert-item">
                             <a href="https://www.credly.com/badges/32f9b854-0296-4ac8-889d-4f8a5e9045a0/public_url" target="_blank">
-                                <img src="/img/google-it-support-certificate.png" alt="Google IT Support certification badge" class="cert-icon" />
+                                <img src="src/img/google-it-support-certificate.png" alt="Google IT Support certification badge" class="cert-icon" />
                             </a>
                             <p class="cert-title">Google IT</p>
                         </div>
@@ -118,9 +118,12 @@
                 <div class="portfolio-gallery">
                     <div class="portfolio-item" id="item1">
                         <div class="hover-items hover-1">
-                            <h3>Conway's Game of Life</h3>
-                            <p>A single-page React app that allows you to run and control
-                               a simulation of cellular life.</p>
+                            <h3>Developer Blog</h3>
+                            <p>
+                               My blog, built with Gastby, React, and Sass.
+                               Topics include career development, history of programming languages,
+                               tutorials, and deep dives into programming concepts. 
+                            </p>
                             <div class="hover-icons">
                                 <p>In development</p>
                             </div>
@@ -134,7 +137,7 @@
                             </p>
                             <div class="hover-icons">
                                 <div class="btn-con">
-                                    <a href="/pages/project-oblique-strategies.html" class="main-btn btn-hover" target="_blank">
+                                    <a href="src/pages/project-oblique-strategies.html" class="main-btn btn-hover" target="_blank">
                                         <span class="btn-text">Learn more</span>
                                     </a>
                                 </div>
@@ -147,7 +150,7 @@
                             <p>A fullstack portfolio/eCommerce website for a visual artist using Java, Spring Boot, and MySQL. </p>
                             <div class="hover-icons">
                                 <div class="btn-con">
-                                    <a href="/pages/project-davidsogno.html" class="main-btn btn-hover" target="_blank">
+                                    <a href="src/pages/project-davidsogno.html" class="main-btn btn-hover" target="_blank">
                                         <span class="btn-text">Learn more</span>
                                     </a>
                                 </div>
@@ -156,8 +159,9 @@
                     </div>
                     <div class="portfolio-item" id="item4">
                         <div class="hover-items hover-4">
-                            <h3>Servare</h3>
-                            <p>A fullstack bookmark manager - because browser managers are clearly not enough! </p>
+                            <h3>Conway's Game of Life</h3>
+                            <p>A single-page React app that allows you to run and control
+                               a simulation of cellular life.</p>
                             <div class="hover-icons">
                                 <p>In development</p>
                             </div>
@@ -169,7 +173,7 @@
                             <p>This website, which was built from scratch with vanilla JavaScript, HTML, and CSS, and continues to evolve as my abilities grow.</p>
                             <div class="hover-icons">
                                 <div class="btn-con">
-                                    <a href="/pages/project-personal-website.html" class="main-btn btn-hover" target="_blank">
+                                    <a href="src/pages/project-personal-website.html" class="main-btn btn-hover" target="_blank">
                                         <span class="btn-text">Learn more</span>
                                     </a>
                                 </div>
@@ -299,6 +303,6 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/94903a6b05.js" crossorigin="anonymous"></script>
-    <script src="/app.js"></script>
+    <script src="src/js/app.js"></script>
 </body> 
 </html>
