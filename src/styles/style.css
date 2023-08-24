@@ -1,11 +1,11 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-}
+} */
 
-:root {
+/* :root {
   --white: #fff;
   --black: #06072d;
   --primary: #0A0C4E;
@@ -24,12 +24,12 @@
   --trans: all .4s ease-in-out;
   --br-sm: 8px;
   --standard-border: 1px solid rgba(165, 164, 214,.5);
-}
+} */
 
 /* ------------------------ General ----------------------------- */
-html {
+/* html {
   height: 100%;
-}
+} */
 
 body {
   background-color: var(--primary);
@@ -39,19 +39,19 @@ body {
   min-height: 100%;
 }
 
-a {
+/* a {
   display: inline-block;
   text-decoration: none;
   color: inherit;
   font-family: inherit;
-}
+} */
 
-h1, h2, h3 {
+/* h1, h2, h3 {
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
 h4, h5, h6 {
   font-family: 'Barlow Condensed', sans-serif;
-}
+} */
 
 
 /* ------------------------- Sections --------------------------- */
