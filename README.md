@@ -2,7 +2,7 @@
 
 Hello!  This is my portfolio website, built with plain old HTML, CSS, and JavaScript.  And love 💖. And coffee ☕.  
 
-For more info on how I built this site, see the [project page](https://davidlarocco.dev/pages/project-personal-website.html).
+For more info on how I built this site, see the [project page](https://davidlarocco.dev/src/pages/project-personal-website.html).
 
 ## Usage 
 You can visit the deployed site at [www.davidlarocco.dev](https://davidlarocco.dev/).  Please stop by!
@@ -18,4 +18,4 @@ Here are some of the resources I used when building this site:
 * [FormSubmit](https://formsubmit.co/)
 
 ## Credits
-&copy; 2022 by David LaRocco
+&copy; 2025 by David LaRocco
