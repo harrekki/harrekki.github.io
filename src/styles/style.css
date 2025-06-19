@@ -139,10 +139,29 @@ section {
 }
 
 .header-text {
-  background-color: rgba(10, 12, 78,0.6);
   color: var(--text-color);
   border-radius: var(--br-sm);
+  z-index: 10;
   padding: 1.5rem;
+
+  position: relative;
+  background: hsla(200, 20%, 9%, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+.header-text::before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  inset: 0;
+  border-radius: inherit;
+  border: 1px solid transparent;
+  background: linear-gradient(var(--border1), var(--border2)) border-box;
+  mask: linear-gradient(black, black) border-box,
+        linear-gradient(black, black) padding-box;
+  mask-composite: subtract;
+
+
 }
 
 small {
@@ -737,6 +756,11 @@ hr {
   }
   .header-text .btn-con {
     margin-top: 3rem;
+  }
+
+  .header-text::before {
+    border: none;
+    background: inherit;
   }
 
   .about-container {
