@@ -146,7 +146,7 @@ section {
 
   position: relative;
   background: hsla(200, 20%, 9%, 0.2);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
 }
 
 .header-text::before {
@@ -156,7 +156,7 @@ section {
   inset: 0;
   border-radius: inherit;
   border: 1px solid transparent;
-  background: linear-gradient(var(--border1), var(--border2)) border-box;
+  background: linear-gradient(var(--border2), var(--grey6)) border-box;
   mask: linear-gradient(black, black) border-box,
         linear-gradient(black, black) padding-box;
   mask-composite: subtract;
@@ -318,13 +318,13 @@ small {
 
 .cert-items {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   padding-top: 1.5rem;
 }
@@ -333,8 +333,8 @@ small {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 250px;
-  height: 290px;
+  width: 18em;
+  height: 15em;
   border: 1px solid var(--grey5);
   border-radius: 5px;
   padding: 1rem 1rem 2rem;
@@ -351,7 +351,7 @@ small {
   font-family: 'Barlow Condensed', sans-serif;
   color: var(--grey3);
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   padding-top: 1.5rem;
   padding-bottom: 1.2rem;
 }
